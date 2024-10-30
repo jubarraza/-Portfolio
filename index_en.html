@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieta's Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="recursos/womanraisinghand.ico" type="image/x-icon">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Qt9Y5jaKSMuYB0ZLz",
+        });
+    })();
+    </script>
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+    <header> 
+        <div class="logo">
+            <h1>Julieta Barraza</h1>
+        </div>
+        
+        <nav class="menu">
+            <ul></ul>
+                <li><a href="#acerca">About me</a></li>
+                <li><a href="#estudios">Studies</a></li>
+                <li><a href="#aptitudes">Skills</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#contacto">Contact</a></li>
+                <li><a href="index.html" title="Switch to Spanish"><img src="recursos/mundo.png" alt="Switch to Spanish" class="icono-mundo"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Acerca de mí -->
+    <section id="acerca" class="seccion">
+        <div id="acerca_texto">
+            <h2>About me <img src="recursos/womanraisinghand.ico" alt="mujer saludando" class="mujer_icono" /></h2>
+            <p>Hi! My name is Julieta Barraza, I'm a student of the <strong>University Technical Degree in Programming at Universidad Tecnologica Nacional (FRGP)</strong>.</p>
+            <p>I am from <strong>Argentina</strong><img src="recursos/bandera_Argentina.png" alt="Bandera Argentina" class="bandera-icono" />, I have a B2 level in english and I'm currently searching for a job.</p>
+            <p>Thanks to my work experience and my studies, I have acquired fundamental knowledge of <strong> Programming (C++ / C#), Manual Testing (frontend and backend), Integrations through API REST, Databases, Support and Application Development.</strong></p>   
+            <p>I have practical experience as a Tester and with Application Support. I am a <strong>responsible</strong> person, with great <strong>problem solving skills</strong> and eager to keep learning.</p>
+            
+        </div>
+
+        <div id="acerca_imagen">
+            <img id="foto_perfil" src="recursos/foto.JPG" alt="Imagen de Perfil">
+        </div>
+        
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#E0AED0" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,32C480,21,600,11,720,10.7C840,11,960,21,1080,21.3C1200,21,1320,11,1380,5.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+
+    <!-- Estudios -->
+    <section id="estudios" class="seccion">
+        <h2>Studies</h2>
+        <div>
+            <h3>On going</h3>
+            <ul class="lista_estudios">
+                <li>University Technical Degree in Programming - <strong>Universidad Tecnologica Nacional (FRGP)</strong></li>
+                <p class="subtitulo">Estimated graduation year: 2025</p>
+                <li>iOS & Swift: The Complete iOS App Development Bootcamp - <strong>Udemy</strong></li>
+            </ul>
+
+            <br>
+            <br>
+            
+            <h3>Finished</h3>
+            <ul>
+                <li>Introduction to Web Development: HTML y CSS - <strong>Google Digital Academy (Skillshop)</strong></li>
+                <p class="subtitulo">Year: 2024</p>
+                <li>QA for day-to-day use: from novice to expert - <strong>Udemy</strong></li>
+                <p class="subtitulo">Year: 2023</p>
+                <li>API Testing with Postman - <strong>Udemy</strong></li>
+                <p class="subtitulo">Year: 2022</p>
+            </ul>
+            
+        </div>
+        
+    </section>
+
+
+    <!-- Aptitudes -->
+    <section id="aptitudes" class="seccion">
+        <h2>Skills</h2>
+        <p>These are some of the technologies I have expertise in</p>
+        &nbsp;
+        
+        <div class="tech_list">
+            <img src="recursos/C-2.png" class="img_tech" alt="C++" title="C++">
+            <img src="recursos/c sharp.png" class="img_tech" alt="C#"  title="C#">
+            <img src="recursos/t-sql.png" class="img_tech" alt="T-SQL"title="T-SQL" >
+        </div>
+        <div>
+            <img src="recursos/html5.png" alt="HTML5" class="img_tech" title="HTML5">
+            <img src="recursos/css.png" alt="CSS3" class="img_tech" title="CSS3">
+            <img src="recursos/swift.png" alt="Swift" class="img_tech" title="Swift">
+        </div>
+    </section>
+
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="seccion">
+        <h2>Projects completed</h2>
+        <p>Here you can find some of my development projects</p>
+        <br>
+        <div class="proyectos-contenedor">
+            <div class="proyecto">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img id="proyecto1-1" src="recursos/proyecto1.jpg" alt="menu consola" class="proyecto-img">
+                        <img id="proyecto1-2" src="recursos/proyecto1-2.jpg" alt="menu informes" class="proyecto-img">
+                        <img id="proyecto1-3" src="recursos/proyecto1-3.jpg" alt="ejemplo informe de Vendedor" class="proyecto-img">
+                    </div>
+                    <div class="nav-imagen">
+                        <a href="#proyecto1-1"></a>
+                        <a href="#proyecto1-2"></a>
+                        <a href="#proyecto1-3"></a>
+                    </div>
+                </div>
+                <div class="proyecto-descripcion">
+                    <h3>Sales and Stock Manager(console)</h3>
+                    <p>Developed with: <img src="recursos/C-2.png" alt="C++" class="icono_proyecto" /></p>
+                    <p>This project was developed for windows console as a final group project for the subject Laboratory 2 at UTN. Personal improvements were made in the use and functionality of all menus. It was developed under the Object-oriented Programming paradigm, using binary data files.</p>
+                    <a href="https://github.com/jubarraza/GestorDeVentas_conMenu" target="_blank">Open in GitHub</a>
+                </div>
+            </div>
+    
+            <div class="proyecto">
+                <img src="recursos/proyecto2.jpg" alt="app ios" class="proyecto-img">
+                <div class="proyecto-descripcion">
+                    <h3>Dice app mobile <br>for IOS</h3>
+                    <p>Developed with: <img src="recursos/swift.png" alt="Swift" class="icono_proyecto" /></p>
+                    <p>Mobile application development made for the course iOS & Swift: The Complete iOS App Development Bootcamp.
+                        Allows to throw 2 dice numbered from 1 to 6 randomly.</p>
+                    <a href="https://github.com/jubarraza/app-Da2-iOS" target="_blank">Open in GitHub</a>
+                </div>
+            </div>
+    
+            <div class="proyecto">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img id="proyecto3-1" src="recursos/proyecto3.jpg" alt="menu inventario" class="proyecto-img">
+                        <img id="proyecto3-2" src="recursos/proyecto3-3.jpg" alt="edicion producto" class="proyecto-img">
+                        <img id="proyecto3-3" src="recursos/proyecto3-5.jpg" alt="agregar marca" class="proyecto-img">
+                    </div>
+                    <div class="nav-imagen">
+                        <a href="#proyecto3-1"></a>
+                        <a href="#proyecto3-2"></a>
+                        <a href="#proyecto3-3"></a>
+                    </div>
+                </div>
+                <div class="proyecto-descripcion">
+                    <h3>Product manager <br>(Aplicacion de escritorio)</h3>
+                    <p>Developed with: <img src="recursos/c sharp.png" alt="C#" class="icono_proyecto" /> <img src="recursos/t-sql.png" alt="T-SQL" class="icono_proyecto" /></p>
+                    <p>Product manager developed as a desktop application for the subject Programming 3 of the University Technical Degree in Programming at UTN.</p>
+                    <p>It is the first team project developed with WinForm (.NET Framework) and connection to Microsoft SQL Server database.</p>
+                    <a href="https://github.com/jubarraza/tp-winform-equipo-10B" target="_blank">Open in GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+
+        <div class="contacto-contenedor">
+    
+            <!-- Redes Sociales -->
+            <div class="redes caja">
+              <h2>Follow me</h2>
+              <div class="redes">
+                <a href="https://github.com/jubarraza" target="_blank">
+                  <img src="recursos/github-icon.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/julieta-barraza/" target="_blank">
+                  <img src="recursos/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://wa.me/5491159205204?text=Hi! I saw your portfolio and decided to contact you" target="_blank">
+                  <img src="recursos/whatsapp-icon.png" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+        
+            <!-- Formulario de Contacto -->
+            <div class="formulario caja">
+              <h2>Contact me 📩</h2>
+              <br>
+              <form id="form-contacto">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="asunto">Subject:</label>
+                <textarea id="asunto" name="asunto" rows="4" required></textarea>
+        
+                <button type="submit" title="Send contact email">Send</button>
+              </form>
+            </div>
+        
+          </div>
+
+    </section>
+</body>
+
+</html>
