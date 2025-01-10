@@ -4,213 +4,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Julieta</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio Julieta Barraza</title>
     <link rel="shortcut icon" href="recursos/womanraisinghand.ico" type="image/x-icon">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "Qt9Y5jaKSMuYB0ZLz",
-        });
-    })();
+        (function () {
+            emailjs.init({
+                publicKey: "Qt9Y5jaKSMuYB0ZLz",
+            });
+        })();
     </script>
-    <script src="codigo.js"></script>
 </head>
 
 <body>
-    <header> 
-        <div class="logo">
-            <h1>Julieta Barraza</h1>
-        </div>
-        
-        <nav class="menu">
-            <ul>
-                <li><a href="#acerca">Acerca de mí</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#aptitudes">Aptitudes</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="index_en.html" title="Cambiar a Ingles"><img src="recursos/mundo.png" alt="Cambiar a inglés" class="icono-mundo"></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid">
+        <div class="row">
 
-
-    <!-- Acerca de mí -->
-    <section id="acerca" class="seccion">
-        <div id="acerca_texto">
-            <h2>Acerca de mí <img src="recursos/womanraisinghand.ico" alt="mujer saludando" class="mujer_icono" /></h2>
-            <p>Hola! Mi nombre es Julieta Barraza, soy estudiante en la <strong>Tecnicatura en Programacion de la Universidad Tecnologica Nacional (FRGP)</strong>.</p>
-            <p>Soy <strong>Argentina</strong><img src="recursos/bandera_Argentina.png" alt="Bandera Argentina" class="bandera-icono" />, tengo nivel B2 de ingles y actualmente me encuentro buscando trabajo.</p>
-            <p>Gracias a mi experiencia laboral y mis estudios, he adquirido conocimientos fundamentales de <strong>Programacion (C++ / C#), Testing manual (frontend y backend), Integraciones mediante API REST, Bases de Datos, Soporte y Desarrollo de Aplicaciones.</strong></p>   
-            <p>Tengo experiencia como Tester y como Soporte de aplicaciones. Soy una persona <strong>responsable</strong>, con gran capacidad de <strong>resolución de problemas</strong> y muchas ganas de seguir aprendiendo. </p>
-            
-        </div>
-
-        <div id="acerca_imagen">
-            <img id="foto_perfil" src="recursos/foto.JPG" alt="Imagen de Perfil">
-        </div>
-        
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#E0AED0" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,32C480,21,600,11,720,10.7C840,11,960,21,1080,21.3C1200,21,1320,11,1380,5.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-
-
-    <!-- Estudios -->
-    <section id="estudios" class="seccion">
-        <h2>Estudios</h2>
-        <div>
-            <h3>En curso</h3>
-            <ul class="lista_estudios">
-                <li>Tecnicatura Universitaria en Programacion - <strong>Universidad Tecnologica Nacional (FRGP)</strong></li>
-                <p class="subtitulo">Año estimado de egreso: 2025</p>
-                <li>iOS & Swift: The Complete iOS App Development Bootcamp - <strong>Udemy</strong></li>
-            </ul>
-
-            <br>
-            <br>
-            
-            <h3>Finalizados</h3>
-            <ul>
-                <li>Introduccion al Desarrollo Web: HTML y CSS - <strong>Google Digital Academy (Skillshop)</strong></li>
-                <p class="subtitulo">Año: 2024</p>
-                <li>QA para el dia a dia: De novato a Experto - <strong>Udemy</strong></li>
-                <p class="subtitulo">Año: 2023</p>
-                <li>API Testing con Postman - <strong>Udemy</strong></li>
-                <p class="subtitulo">Año: 2022</p>
-            </ul>
-            
-        </div>
-        
-    </section>
-
-
-    <!-- Aptitudes -->
-    <section id="aptitudes" class="seccion">
-        <h2>Aptitudes</h2>
-        <p>Estas son algunas de las tecnologías en las que tengo conocimientos</p>
-        &nbsp;
-        
-        <div class="tech_list">
-            <img src="recursos/C-2.png" class="img_tech" alt="C++" title="C++">
-            <img src="recursos/c sharp.png" class="img_tech" alt="C#" title="C#">
-            <img src="recursos/t-sql.png" class="img_tech" alt="T-SQL" title="T-SQL">
-        </div>
-        <div>
-            <img src="recursos/html5.png" alt="HTML5" class="img_tech" title="HTML5">
-            <img src="recursos/css.png" alt="CSS3" class="img_tech" title="CSS3">
-            <img src="recursos/swift.png" alt="Swift" class="img_tech" title="Swift">
-        </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section id="proyectos" class="seccion">
-        <h2>Proyectos realizados</h2>
-        <p>Aqui podras encontrar algunos de mis proyectos de desarrollo</p>
-        <br>
-        <div class="proyectos-contenedor">
-            <div class="proyecto">
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img id="proyecto1-1" src="recursos/proyecto1.jpg" alt="menu consola" class="proyecto-img">
-                        <img id="proyecto1-2" src="recursos/proyecto1-2.jpg" alt="menu informes" class="proyecto-img">
-                        <img id="proyecto1-3" src="recursos/proyecto1-3.jpg" alt="ejemplo informe de Vendedor" class="proyecto-img">
-                    </div>
-                    <div class="nav-imagen">
-                        <a href="#proyecto1-1"></a>
-                        <a href="#proyecto1-2"></a>
-                        <a href="#proyecto1-3"></a>
-                    </div>
+            <!-- Sidebar -->
+            <div class="col-auto min-vh-100 d-flex flex-column" style="background-color:#2e0041;">
+                <div class="pt-4 pb-1 px-2">
+                    <a href="index.html" class="text-white text-decoration-none">
+                        <i class="ms-3 fas fa-star d-inline d-sm-none"></i>
+                        <span class="fs-4 d-none d-sm-inline" style="font-family: 'Poppins', sans-serif;">Julieta
+                            Barraza</span>
+                    </a>
                 </div>
-                <div class="proyecto-descripcion">
-                    <h3>Gestor de Ventas e Inventario (consola)</h3>
-                    <p>Desarrollado con: <img src="recursos/C-2.png" alt="C++" class="icono_proyecto" /></p>
-                    <p>Este proyecto fue desarrollado para consola como proyecto final grupal para la materia Laboratorio 2 de la UTN. Se realizaron mejoras personales en el uso y funcionalidad de todos los menus. Se desarrolló bajo el paradigma de Programación Orientada a Objetos, haciendo uso de archivos de datos binarios.</p>
-                    <a href="https://github.com/jubarraza/GestorDeVentas_conMenu" target="_blank">Ver en GitHub</a>
+                <hr class="text-white">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#acerca-de-mi" class="nav-link text-white">
+                            <i class="fas fa-user me-2"></i>
+                            <span class="d-none d-sm-inline" data-translate="about-me">Acerca de mi</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a href="#estudios" class="nav-link text-white">
+                        <i class="fas fa-graduation-cap me-1"></i>
+                        <span class="d-none d-sm-inline" data-translate="studies">Estudios</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a href="#aptitudes" class="nav-link text-white">
+                        <i class="fas fa-gauge me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="skills">Aptitudes</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a href="#proyectos" class="nav-link text-white">
+                        <i class="far fa-window-restore me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="proyects">Proyectos</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a href="#contacto" class="nav-link text-white">
+                        <i class="far fa-envelope me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="contact">Contacto</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item"></li>
+                    <a href="https://drive.google.com/uc?export=download&id=1NEXqf3Qb-25ggLrPx6IIgycukSB5iIii"
+                        class="nav-link text-white">
+                        <i class="fas fa-file-download me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="download-cv">Descargar CV</span>
+                    </a>
+                    </li>
+
+                </ul>
+
+                <div class="mt-auto p-3 float-start">
+                    <button id="themeToggle"
+                        class="btn btn-sm text-white w-100 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-moon me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="dark-mode">Modo Oscuro</span>
+                    </button>
+
+                    <button id="languageToggle"
+                        class="btn btn-sm text-white w-100 d-flex align-items-center justify-content-center mt-2">
+                        <i class="fas fa-globe me-2"></i>
+                        <span class="d-none d-sm-inline" data-translate="lang-mode">Switch to English</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col overflow-auto" id="main">
+                <div class="p-4">
+
+                    <!-- Acerca de mí -->
+                    <section id="acerca-de-mi" class="seccion">
+                        <img id="foto_perfil" src="recursos/foto.JPG" alt="Imagen de Perfil" class="float-start me-4">
+
+
+                        <div id="acerca_texto" class="mt-2">
+                            <p data-translate="intro-aboutme">Hola! Mi nombre es Julieta Barraza, soy estudiante en la <strong>Tecnicatura en Programacion de la Universidad Tecnologica Nacional (FRGP)</strong>.</p>
+                            <p data-translate="country-aboutme">Soy <strong>Argentina</strong><img src="recursos/bandera_Argentina.png" alt="Bandera Argentina" class="bandera-icono" />, tengo nivel B2 de ingles y actualmente me encuentro buscando trabajo.</p>
+                            <p data-translate="skills-aboutme">Gracias a mi experiencia laboral y mis estudios, he adquirido conocimientos fundamentales de <strong>Programacion (C++ / C#), Testing manual (frontend y backend), Integraciones mediante API REST, Bases de Datos, Soporte y Desarrollo de Aplicaciones.</strong></p>
+                            <p data-translate="experience-aboutme">Tengo experiencia como Tester y como Soporte de aplicaciones. Soy una persona <strong>responsable</strong>, con gran capacidad de <strong>resolución de problemas</strong> y muchas ganas de seguir aprendiendo.</p>
+                        </div>
+                    </section>
+
+                </div>
+
+
+                <div class="p-4">
+                    <!-- Estudios -->
+                    <hr id="estudios">
+                    <section class="seccion">
+                        <div class="row">
+                            <h2 class="text-center" data-translate="title-studies">Estudios</h2>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 col-md-6">
+                                <h3 data-translate="studies-ongoing">En curso</h3>
+                                <ul>
+                                    <li data-translate="utn-tup">Tecnicatura Universitaria en Programacion - <strong>Universidad Tecnologica Nacional (FRGP)</strong></li>
+                                    <p class="subtitulo" data-translate="year-utn">Año estimado de egreso: 2025</p>
+                                    <li data-translate="ios-course">iOS & Swift: The Complete iOS App Development Bootcamp - <strong>Udemy</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <h3 data-translate="studies-finished">Finalizados</h3>
+                                <ul>
+                                    <li data-translate="webdev-course">Introducción al Desarrollo Web: HTML y CSS - <strong>Google Digital Academy (Skillshop)</strong></li>
+                                    <p class="subtitulo" data-translate="year-webdev">Año: 2024</p>
+                                    <li data-translate="qa-course">QA para el día a día: De novato a Experto - <strong>Udemy</strong></li>
+                                    <p class="subtitulo" data-translate="year-qa">Año: 2023</p>
+                                    <li data-translate="api-course">API Testing con Postman - <strong>Udemy</strong></li>
+                                    <p class="subtitulo" data-translate="year-api">Año: 2022</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Aptitudes -->
+                    <hr id="aptitudes">
+                    <section class="seccion">
+                        <div class="row"></div>
+                            <h2 class="text-center" data-translate="title-skills">Aptitudes</h2>
+                            <p class="text-center" data-translate="subtitle-skills">Estas son algunas de las tecnologías en las que tengo conocimientos
+                            </p>
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="tech_list text-center">
+                                <img src="recursos/C-2.png" class="img-tech rounded col-3" alt="C++" title="C++">
+                                <img src="recursos/c sharp.png" class="img-tech rounded col-3" alt="C#" title="C#">
+                                <img src="recursos/t-sql.png" class="img-tech rounded col-3" alt="T-SQL" title="T-SQL">
+                                <img src="recursos/html5.png" alt="HTML5" class="img-tech rounded col-3" title="HTML5">
+                                <img src="recursos/css.png" alt="CSS3" class="img-tech rounded col-3" title="CSS3">
+                                <img src="recursos/swift.png" alt="Swift" class="img-tech rounded col-3" title="Swift">
+                            </div>
+
+                        </div>
+
+
+                    </section>
+
+
+                    <!-- Proyectos -->
+                    <hr id="proyectos">
+                    <section class="seccion">
+                        <div class="row">
+                            <h2 class="text-center" data-translate="title-projects">Proyectos realizados</h2>
+                            <p class="text-center" data-translate="subtitle-projects">Aqui podras encontrar algunos de mis proyectos de desarrollo
+                            </p>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="recursos/proyecto1.jpg" class="card-img-top" alt="Gestor de consola">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title" data-translate="title-project-1">Gestor de Ventas e Inventario (consola)</h5>
+                                        <p class="card-text" data-translate="text-project-1">Este proyecto fue desarrollado para consola como proyecto final grupal para la materia Laboratorio 2 de la UTN. Se realizaron mejoras personales en el uso y funcionalidad de todos los menus. Se desarrolló bajo el paradigma de Programación Orientada a Objetos, haciendo uso de archivos de datos binarios.</p>
+                                        <a href="https://github.com/jubarraza/GestorDeVentas_conMenu" target="_blank"
+                                            class="btn btn-toolbar btn-bd-primary mt-auto" data-translate="link-to-github">Ver en Github
+                                        </a>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary" data-translate="tech-project-1">Desarrollado con C++</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="recursos/proyecto2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title" data-translate="title-project-2">App movil de Dados para IOS</h5>
+                                        <p class="card-text" data-translate="text-project-2">Desarrollo de aplicacion movil realizada para el curso iOS & Swift: The Complete iOS App Development Bootcamp que permite arrojar 2 dados de manera aleatoria</p>
+                                        <a href="https://github.com/jubarraza/app-Da2-iOS" target="_blank"
+                                            class="btn btn-toolbar btn-bd-primary mt-auto" data-translate="link-to-github">Ver en Github
+                                        </a>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary" data-translate="tech-project-2">Desarrollado con Swift</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="recursos/proyecto3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title" data-translate="title-project-3">Gestor de Productos (Aplicación de Windows)</h5>
+                                        <p class="card-text" data-translate="text-project-3">Gestor de articulos desarrollado como aplicación de escritorio para la materia Programacion 3 de la Tecnicatura Universitaria en Programacion de la UTN. Desarrollado con WinForm (.NET Framework) y Base de Datos Microsoft SQL Server.</p>
+                                        </p>
+                                        <a href="https://github.com/jubarraza/tp-winform-equipo-10B" target="_blank"
+                                            class="btn btn-toolbar btn-bd-primary mt-auto" data-translate="link-to-github">Ver en Github
+                                        </a>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary" data-translate="tech-project-3">Desarrollado con C# y T-SQL</small>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </section>
+                    <hr>
+                    <!-- Contacto -->
+                    <section id="contacto" class="seccion">
+
+                        <div class="contacto-contenedor">
+
+                            <!-- Redes Sociales -->
+                            <div class="redes caja">
+                                <h2 class="ms-auto text-center" data-translate="social-networks">Mis redes</h2>
+                                <div class="redes">
+                                    <a href="https://github.com/jubarraza" target="_blank">
+                                        <img src="recursos/github-icon.png" alt="GitHub">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/julieta-barraza/" target="_blank">
+                                        <img src="recursos/linkedin-icon.png" alt="LinkedIn">
+                                    </a>
+                                    <a href="https://wa.me/5491159205204?text=Hola! Vi tu portfolio y decidi contactarte"
+                                        target="_blank">
+                                        <img src="recursos/whatsapp-icon.png" alt="WhatsApp">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Formulario de Contacto -->
+                            <div class="formulario caja mt-4">
+                                <h2 class="ms-auto text-center" data-translate="title-contact">Contactame 📩</h2>
+                                <br>
+                                <form id="form-contacto" class="d-flex flex-column align-items-center">
+                                    <div class="mb-3 w-100">
+                                        <label for="nombre" class="form-label" data-translate="form-name">Nombre:</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-3 w-100">
+                                        <label for="email" class="form-label" data-translate="form-email">Email:</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-3 w-100">
+                                        <label for="asunto" class="form-label" data-translate="form-subject">Asunto:</label>
+                                        <textarea id="asunto" name="asunto" class="form-control" rows="4"
+                                            required></textarea>
+                                    </div>
+
+                                    <!-- Botón centrado -->
+                                    <button type="submit" title="Enviar formulario por correo"
+                                        class="btn btn-bd-primary mt-3" data-translate="form-submit-btn">
+                                        Enviar
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </section>
+
                 </div>
             </div>
-    
-            <div class="proyecto">
-                <img src="recursos/proyecto2.jpg" alt="app ios" class="proyecto-img">
-                <div class="proyecto-descripcion">
-                    <h3>App movil de Dados <br>para IOS</h3>
-                    <p>Desarrollado con: <img src="recursos/swift.png" alt="Swift" class="icono_proyecto" /></p>
-                    <p>Desarrollo de aplicacion movil realizada para el curso iOS & Swift: The Complete iOS App Development Bootcamp.</p>
-                    <p>Permite arrojar 2 dados del 1 al 6 de manera aleatoria</p>
-                    <a href="https://github.com/jubarraza/app-Da2-iOS" target="_blank">Ver en GitHub</a>
+
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel" data-translate="modal-title-email">Envio de correo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-    
-            <div class="proyecto">
-                <div class="carousel">
-                    <div class="carousel-images">
-                        <img id="proyecto3-1" src="recursos/proyecto3.jpg" alt="menu inventario" class="proyecto-img">
-                        <img id="proyecto3-2" src="recursos/proyecto3-3.jpg" alt="edicion producto" class="proyecto-img">
-                        <img id="proyecto3-3" src="recursos/proyecto3-5.jpg" alt="agregar marca" class="proyecto-img">
-                    </div>
-                    <div class="nav-imagen">
-                        <a href="#proyecto3-1"></a>
-                        <a href="#proyecto3-2"></a>
-                        <a href="#proyecto3-3"></a>
-                    </div>
+                <div class="modal-body" id="modalMessage" data-translate="modal-message">
+                    <!-- Aca se coloca el mensaje dinamico -->
                 </div>
-                <div class="proyecto-descripcion">
-                    <h3>Gestor de Productos <br>(Aplicacion de escritorio)</h3>
-                    <p>Desarrollado con: <img src="recursos/c sharp.png" alt="C#" class="icono_proyecto" /> <img src="recursos/t-sql.png" alt="T-SQL" class="icono_proyecto" /></p>
-                    <p>Gestor de articulos desarrollado como aplicación de escritorio para la materia Programacion 3 de la Tecnicatura Universitaria en Programacion de la UTN.</p>
-                    <p>Es el primer proyecto en equipo desarrollado con WinForm (.NET Framework) y conexion a Base de Datos Microsoft SQL Server</p>
-                    <a href="https://github.com/jubarraza/tp-winform-equipo-10B" target="_blank">Ver en GitHub</a>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-bd-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
-    <!-- Contacto -->
-    <section id="contacto" class="seccion">
 
-        <div class="contacto-contenedor">
-    
-            <!-- Redes Sociales -->
-            <div class="redes caja">
-              <h2>Mis redes</h2>
-              <div class="redes">
-                <a href="https://github.com/jubarraza" target="_blank">
-                  <img src="recursos/github-icon.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/julieta-barraza/" target="_blank">
-                  <img src="recursos/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://wa.me/5491159205204?text=Hola! Vi tu portfolio y decidi contactarte" target="_blank">
-                  <img src="recursos/whatsapp-icon.png" alt="WhatsApp">
-                </a>
-              </div>
-            </div>
-        
-            <!-- Formulario de Contacto -->
-            <div class="formulario caja">
-              <h2>Contactame 📩</h2>
-              <br>
-              <form id="form-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="asunto">Asunto:</label>
-                <textarea id="asunto" name="asunto" rows="4" required></textarea>
-        
-                <button type="submit" title="Enviar formulario por correo">Enviar</button>
-              </form>
-            </div>
-        
-          </div>
-
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
